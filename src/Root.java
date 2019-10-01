@@ -27,7 +27,7 @@ public class Root implements Node
 
         TreeSet<String> tempLinks = new TreeSet<>();
         for (Element link : links){
-            if (!(linkSet.contains(link.absUrl("href"))))// добавляем в библиотеку ссылки
+            if (!(linkSet.contains(link.absUrl("href").split("#",2)[0])))// добавляем в библиотеку ссылки
             {
                 linkSet.add(link.absUrl("href")); // общая библиотека ссылок
                 tempLinks.add(link.absUrl("href"));// ссылки на детей узла

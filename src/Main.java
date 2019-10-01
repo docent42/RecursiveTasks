@@ -22,7 +22,7 @@ public class Main
     }
     private static Node getRootNode()
     {
-        return new Root("https://skillbox.ru","",1,new TreeSet<>(Comparator.naturalOrder()));
+        return new Root("https://gtfobins.github.io/","",1,new TreeSet<>(Comparator.naturalOrder()));
     }
 
 }
